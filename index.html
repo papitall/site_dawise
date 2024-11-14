@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <header>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta 
+            name="description" 
+            content="
+                Sitio web dawise.
+                Descubre a Dawise, accede a su música, videos y próximos conciertos.
+                El músico senegalés en España.
+                Dawise
+            ">
+        <meta 
+            name="keywords" 
+            content="
+                dawise, 
+                cantante afrobeat, música afrobeat, reggae, RnB, Senegal, España, 
+                Dawise music, conciertos afrobeat, dawise conciertos, dawise agenda,
+                dawise álbumes, dawise cds, dawise singles, dawise office, dawise space,
+                dawise biografía, dawise contacto
+            ">
+        <title>Dawise | Espacio oficial</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="styles.css">
+    </header>
+</head>
+<body>
+    <section class="content">
+        <!-- Background Content -->
+        <section id="inicio"></section>
+
+        
+        <!-- Head Content - (Principal) -->
+        <header id="headerWebsite">
+            <h1>Dawise sitio web</h1>
+            <img src="imagenes/logotipos/blanco-logo-dawise.svg" alt="Logotipo">
+            <nav id="navprincipal">
+                <a href="index.html#welcome">Inicio</a>
+                <a href="index.html#biography">Biografía</a>
+                <a href="contact.html">Contacto</a>
+                <a href="videos.html">Videos</a>
+                <a href="evento.html">Evento</a>
+                <a href="gallery.html">Galería</a>
+                <a href="musicstore.html" id="musicStoreOutline">Music Store</a>
+            </nav>
+
+            
+            <header class="burgerMenuButton">
+                <i class="fa-solid fa-bars"></i>
+            </header>
+
+            <nav class="burgerMenu">
+                <a href="index.html#welcome">Inicio</a>
+                <a href="index.html#biography">Biografía</a>
+                <a href="contact.html">Contacto</a>
+                <a href="videos.html">Videos</a>
+                <a href="evento.html">Evento</a>
+                <a href="gallery.html">Galería</a>
+                <a href="musicstore.html">Music Store</a>
+            </nav>
+        </header>
+
+
+        <!-- Player of the last single - (Position : fixed) -->
+        <section id="sound_home_box">
+            <audio-player 
+                title="Último Single (Insaan) - Afrobeat"
+                src="singles/insaan.mp3"
+                bar-width="5"
+                bar-gap="2"
+                preload autoplay
+            ></audio-player>
+        </section>
+
+
+        <!-- Página 1 -->
+        <section id="welcome">
+            <article>
+                <h2>¡BIENVENIDO!</h2>
+                <section>
+                    <header>
+                        <p id="bookingIndex"></p>
+                        <img src="imagenes/logotipos/blanco-logo-call.svg" alt="logo-conctact">
+                        <section id="content-changing-text">
+                            <span class="changing-text"></span>
+                        </section>
+                    </header>
+                    <p class="message">Explora el universo donde el arte y la emoción se encuentran.</p>
+                    <p class="message">Es un honor darles la bienvenida a esta página donde la música se convierte en una experiencia completa.</p>
+                    <footer>
+                        <a href="https://www.facebook.com/dawise.artist" target="_blank"><img src="imagenes/logotipos/blanco-logo-facebook.svg"></a>
+                        <a href="https://www.instagram.com/dawisedawise/" target="_blank"><img src="imagenes/logotipos/blanco-logo-instagram.svg"></a>
+                        <a href="https://www.tiktok.com/@dawisedawise" target="_blank"><img src="imagenes/logotipos/blanco-logo-tiktok.svg"></a>
+                        <a href="https://www.youtube.com/@peacekodawisespace" target="_blank"><img src="imagenes/logotipos/blanco-logo-youtube.svg"></a>
+                    </footer>
+                </section>
+            </article>
+        </section>
+
+
+        <!-- Página 2 -->
+        <section id="biography">
+            <article>
+                <h2>Viaje musical</h2>
+                <p>Dawise, cantautor originario de Dakar (Senegal), se embarcó en su viaje musical lanzando su primer EP en 2009, cautivando a los oyentes con su suave voz y su estilo único. Su primer álbum, publicado en 2014, fue aclamado por la crítica y estuvo rápidamente disponible en las principales plataformas de descarga, marcando un hito importante en su carrera.</p>
+                <p>A lo largo de los años, Dawise ha tenido el privilegio de colaborar con artistas de renombre, como Baaba Maal, una figura icónica de la música senegalesa e internacional. Esta colaboración fue uno de los momentos culminantes de su trayectoria, ya que le permitió mostrar su talento y creatividad. Trabajando con prestigiosos estudios como Nopanik Production en París, Dawise perfeccionó sus habilidades de producción y arreglos, añadiendo un toque único a sus creaciones musicales. Sus logros son el resultado de un duro trabajo y una pasión inquebrantable por la música, y su compromiso con la excelencia brilla en cada proyecto al que contribuye. En la actualidad, Dawise sigue cautivando al público con su música inspiradora y su estilo distintivo. Su trayectoria musical, jalonada de prestigiosas colaboraciones y notables logros, dice mucho de su talento y determinación para superar los límites del arte musical.</p>
+                <p>Únase a Dawise en su viaje musical y descubra la esencia de su alma a través de sus encantadoras melodías.</p>
+            </article>
+        </section>
+
+        
+        <footer class="footer-principal">
+            <iframe 
+                src="footer-frame.html" 
+                frameborder="0"
+                scrolling="no"></iframe>
+        </footer>
+
+
+    </section>
+
+    <script src="scripts.js"></script>
+    <script src="burger.js"></script>
+</body>
+</html>

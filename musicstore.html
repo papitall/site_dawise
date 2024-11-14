@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta 
+        name="description" 
+        content="
+            Dawise sitio web oficial.
+            Contacta con Dawise a través de su página web oficial:
+            accede a su música, videos y próximos conciertos.
+            El músico senegalés en España.
+            Dawise.
+        ">
+    <meta 
+        name="keywords" 
+        content="
+            Dawise, 
+            cantante afrobeat, música afrobeat, reggae, RnB, Senegal, España, 
+            Dawise music, conciertos afrobeat, Dawise conciertos, Dawise agenda,
+            Dawise álbumes, Dawise cds, Dawise singles, Dawise office, Dawise space,
+            Dawise biografía, Dawise contacto
+        ">
+    <title>Dawise Sitio Web | Music Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="content">
+        <!-- Background Content -->
+        <section id="video-background"></section>
+
+        <!-- Head Content - (Principal) -->
+        <header id="headerWebsite">
+            <h1>Dawise sitio web</h1>
+            <img src="imagenes/logotipos/blanco-logo-dawise.svg" alt="Logotipo">
+            <nav id="navprincipal">
+                <a href="index.html#welcome">Inicio</a>
+                <a href="#releases">Releases</a>
+                <a href="https://open.spotify.com/intl-fr/artist/3w3u08b24tJB7TaWyqaxU2" target="_blank" class="header_name">Spotify</a>
+                <a href="https://music.apple.com/bo/artist/dawise/570756490" target="_blank" class="header_name">Apple Music</a>
+                <a href="https://music.youtube.com/channel/UCzoSShstp9-ir-HmxcSXbKA" target="_blank" class="header_name">Youtube Music</a>
+                <a href="https://amazon.es/music/player/albums/B082MCN92Y?marketplaceId=A1RKKUPIHCS9HS&musicTerritory=ES&ref=dm_sh_IfV815iaq3Lf1tLnoSEgEEX2c" target="_blank" class="header_name">Amazon Music</a>
+                <a href="musicstore.html#page_music" id="musicStoreOutline">Music Store</a>
+            </nav>
+
+            <div class="burgerMenuButton">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <nav class="burgerMenu">
+                <a href="index.html#welcome">Inicio</a>
+                <a href="#releases">Releases</a>
+                <a href="https://open.spotify.com/intl-fr/artist/3w3u08b24tJB7TaWyqaxU2" target="_blank" class="header_name">Spotify</a>
+                <a href="https://music.apple.com/bo/artist/dawise/570756490" target="_blank" class="header_name">Apple Music</a>
+                <a href="https://music.youtube.com/channel/UCzoSShstp9-ir-HmxcSXbKA" target="_blank" class="header_name">Youtube Music</a>
+                <a href="https://amazon.es/music/player/albums/B082MCN92Y?marketplaceId=A1RKKUPIHCS9HS&musicTerritory=ES&ref=dm_sh_IfV815iaq3Lf1tLnoSEgEEX2c" target="_blank" class="header_name">Amazon Music</a>
+                <a href="musicstore.html#page_music">Music Store</a>
+            </nav>
+        </header>
+
+        <!-- Página 1 -->
+        <audio src="" id="audio"></audio>
+
+        <div class="page_music" id="page_music">
+            <div class="music-player">
+                <h1 class="music-name">song one</h1>
+                <p class="album-name">album</p>
+
+                <div class="disk"></div>
+
+                <div class="song-slider">
+                    <input type="range" value="0" class="seek-bar">
+                    <span class="current-time">00:00</span>
+                    <span class="song-duration">00:00</span>
+                </div>
+
+                <div class="controls">
+                    <button class="btn backward-btn"><img src="imagenes/botones-descargados/pre.png" alt=""></button>
+                    <button class="play-btn pause">
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="btn forward-btn"><img src="imagenes/botones-descargados/nxt.png" alt=""></button>
+                </div>
+
+                <p class="feat-name">album</p>
+            </div>
+        </div>
+
+        <script src="data.js"></script>
+        <script src="app.js"></script>
+
+        <!-- Página 2 -->
+        <div class="albums" id="releases">
+            <div class="container">
+
+                <div class="slide">
+        
+                    <div class="item" style="background-image: url('imagenes/cover/cover-covid.png');">
+                        <div class="infos-releases">
+                            <div class="name">And Xeex Covid</div>
+                            <div class="des">Una iniciativa musical de sensibilización creada para educar y motivar a las personas a seguir las medidas de prevención contra el <b>COVID-19 : marzo 2020</b>.</div>
+                            <button class="seeMoreBtn">See More</button>
+                            <div class="more">
+                                <h3 class="release_date">2020</h3>
+                                <p class="label">Dawise Office / Khidma Prod</p>
+                                <div class="category">Single</div>
+                                <div class="tracks">
+                                    <p class="track_name"><b>And Xeex Covid19</b><span>ft MamJ Ras Soul</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item" style="background-image: url('imagenes/cover/cover-smileagain.png');">
+                        <div class="infos-releases">
+                            <div class="name">Simle Again</div>
+                            <div class="des">Este trabajo és el primer álbum lanzado en <b>mayo de 2021</b>. A través de las canciones, Dawise transmite un mensaje de esperanza, resiliencia y positivismo.</div>
+                            <button class="seeMoreBtn">See More</button>
+                            <div class="more">
+                                <h3 class="release_date">2014</h3>
+                                <p class="label">Dawise Office</p>
+                                <div class="category">ALBUM</div>
+                                <div class="tracks">
+                                    <p class="track_name"><b>Dance With Me</b> <span></span></p>
+                                    <p class="track_name"><b>Dawise</b> <span></span></p>
+                                    <p class="track_name"><b>Let's Make It</b> <span>ft Ndongo D</span></p>
+                                    <p class="track_name"><b>Mam'Afrika</b> <span></span></p>
+                                    <p class="track_name"><b>Mame Baye</b> <span>ft Koula</span></p>
+                                    <p class="track_name"><b>Move It</b> <span></span></p>
+                                    <p class="track_name"><b>My Lord</b> <span>ft One Pac</span></p>
+                                    <p class="track_name"><b>Not Like Me</b> <span>ft Poppin</span></p>
+                                    <p class="track_name"><b>Ndakaaru</b> <span></span></p>
+                                    <p class="track_name"><b>Rise Up</b> <span>ft Sammy</span></p>
+                                    <p class="track_name"><b>No Matter</b> <span></span></p>
+                                    <p class="track_name"><b>Smile Again</b> <span></span></p>
+                                    <p class="track_name"><b>Show Me</b> <span></span></p>
+                                    <p class="track_name"><b>Underdastars</b> <span></span></p>
+                                    <p class="track_name"><b>You're My Fight</b> <span></span></p>
+                                    <p class="track_name"><b>All Of Us</b> <span></span></p>
+                                    <p class="track_name"><b>Baye Sangue N'diaye</b> <span>ft Prof / Koula</span></p>
+                                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/4YwJW23hU8dKzKnRHixzKH?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item" style="background-image: url('imagenes/cover/cover-insaan.png');">
+                        <div class="infos-releases">
+                            <div class="name">Insaan</div>
+                            <div class="des">Una inspiración espiritual. <br> A través de su letra profunda y emotiva, la canción expresa una devoción intensa, admiración y amor incondicional hacia lo divino.</div>
+                            <button class="seeMoreBtn">See More</button>
+                            <div class="more">
+                                <h3 class="release_date">2022</h3>
+                                <p class="label">Dawise Office</p>
+                                <div class="category">Single</div>
+                                <div class="tracks">
+                                    <p class="track_name"><b>Insaan</b><span></span></p>
+                                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/35wPffZ69Ytzdo9DOpSE84?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item" style="background-image: url('imagenes/cover/cover-pretty.png');">
+                        <div class="infos-releases">
+                            <div class="name">Pretty Woman</div>
+                            <div class="des">Una canción de amor lanzada en <b>mayo de 2021</b> que celebra la belleza y la esencia de una persona especial, con letras románticas y emotivas que expresan admiración y cariño profundo.</div>
+                            <button class="seeMoreBtn">See More</button>
+                            <div class="more">
+                                <h3 class="release_date">2021</h3>
+                                <p class="label">Dawise Office / Nopanik Prod / ArowGrafiks</p>
+                                <div class="category">Single</div>
+                                <div class="tracks">
+                                    <p class="track_name"><b>Pretty Woman</b><span></span></p>
+                                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/2tZkP2AFjvQiGPl0l40KEL?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item" style="background-image: url('imagenes/cover/cover-africains.png');">
+                        <div class="infos-releases">
+                            <div class="name">Africains</div>
+                            <div class="des"> Llamado a la revolución y al empoderamiento de los jóvenes africanos. La letra invita a la juventud a levantarse, reclamar sus derechos y ser protagonistas en el desarrollo de su continente. La canción también alienta a los jóvenes a valorar su identidad cultural y su historia.</div>
+                            <button class="seeMoreBtn">See More</button>
+                            <div class="more">
+                                <h3 class="release_date">2020</h3>
+                                <p class="label">Dawise Office / Khidma Groupe</p>
+                                <div class="category">Single</div>
+                                <div class="tracks">
+                                    <p class="track_name"><b>Africains réveillez vous !</b><span></span></p>
+                                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/0d7YuIhAqepMTlaMwyWait?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item" style="background-image: url('imagenes/cover/cover-boigpertu.png');">
+                        <div class="infos-releases">
+                            <div class="name">Boig per Tu</div>
+                            <div class="des">És un remix de la famosa canción original de la banda catalana Sau. Lanzada inicialmente en los años 90, esta canción se convirtió en un clásico de la música en catalán y en un himno de amor incondicional</div>
+                            <button class="seeMoreBtn">See More</button>
+                            <div class="more">
+                                <h3 class="release_date">2021</h3>
+                                <p class="label">Dawise Office</p>
+                                <div class="category">Single</div>
+                                <div class="tracks">
+                                    <p class="track_name"><b>Autor Musica Original : SAU</b></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item" style="background-image: url('imagenes/cover/cover-hanii.png');">
+                        <div class="infos-releases">
+                            <div class="name">Hannii Ann lii</div>
+                            <div class="des">És una canción que presenta la letra del guía espiritual Mame Baye Niasse, dedicada al Profeta Ibrahim (Abraham).</div>
+                            <button class="seeMoreBtn">See More</button>
+                            <div class="more">
+                                <h3 class="release_date">2020</h3>
+                                <p class="label">Dawise Office</p>
+                                <div class="category">Single</div>
+                                <div class="tracks">
+                                    <p class="track_name"><b>Hanii Ann Lii Ibrahima</b><span></span></p>
+                                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/6h03MF6SdsS86F7xA5A1B5?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item" style="background-image: url('imagenes/cover/cover-mediterraneo.png');">
+                        <div class="infos-releases">
+                            <div class="name">Mediterraneo</div>
+                            <div class="des">És una de las canciones más emblemáticas de Joan Manuel Serrat, lanzada en 1971. Este tema es un tributo al Mar Mediterráneo y a todo lo que representa para el artista: la cultura, los paisajes, y el sentimiento de pertenencia y raíces profundas.</div>
+                            <button class="seeMoreBtn">See More</button>
+                            <div class="more">
+                                <h3 class="release_date">2020</h3>
+                                <p class="label">Dawise Office</p>
+                                <div class="category">Single</div>
+                                <div class="tracks">
+                                    <p class="track_name"><b>Autor Musica Original : Joan Manuel Serrat</b></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+        
+                <div class="button">
+                    <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+                    <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+        
+            </div>
+        </div>
+    </section>
+
+    <script src="scripts.js"></script>
+    <script src="burger.js"></script>
+    
+    <script>
+        // --------------- FUNCIÓN RELEASES ---------------
+        let next = document.querySelector('.next');
+        let prev = document.querySelector('.prev');
+
+        next.addEventListener('click', function() {
+            let items = document.querySelectorAll('.item');
+            document.querySelector('.slide').appendChild(items[0]);
+        });
+
+        prev.addEventListener('click', function() {
+            let items = document.querySelectorAll('.item');
+            document.querySelector('.slide').prepend(items[items.length - 1]);
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            let seeMoreButtons = document.querySelectorAll('.seeMoreBtn');
+            
+            seeMoreButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    let moreContent = this.nextElementSibling;
+                    moreContent.style.transition = 'height 2s';
+                    
+                    if (moreContent.style.display === 'none' || moreContent.style.display === '') {
+                        moreContent.style.display = 'block';
+                        this.textContent = 'Close';
+                    } else {
+                        moreContent.style.display = 'none';
+                        this.textContent = 'See More';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

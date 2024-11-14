@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <header>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta 
+            name="description" 
+            content="
+                Dawise sitio web oficial.
+                Contacta con dawise a través de su página web oficial :
+                accede a su música, videos y próximos conciertos.
+                El músico senegalés en España.
+                Dawise.
+            ">
+        <meta 
+            name="keywords" 
+            content="
+                Dawise, 
+                cantante afrobeat, música afrobeat, reggae, RnB, Senegal, España, 
+                Dawise music, conciertos afrobeat, dawise conciertos, dawise agenda,
+                dawise álbumes, dawise cds, dawise singles, dawise office, dawise space,
+                dawise biografía, dawise contacto
+            ">
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function(){
+                emailjs.init({
+                    publicKey: "aNlIzFiW4URuOPxQ_",
+                });
+            })();
+        </script>
+        <title>Dawise Sitio Web | Contacto</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="styles.css">
+    </header>
+</head>
+<body>
+    <section class="content">
+        <!-- Background Content -->
+        <section id="contacto-background"></section>
+
+
+        <!-- Head Content - (Principal) -->
+        <header id="headerWebsite">
+            <h1>Dawise sitio web</h1>
+            <img src="imagenes/logotipos/blanco-logo-dawise.svg" alt="Logotipo">
+            <nav id="navprincipal">
+                <a href="index.html#welcome">Inicio</a>
+                <a href="index.html#biography">Biografía</a>
+                <a href="contact.html">Contacto</a>
+                <a href="videos.html">Videos</a>
+                <a href="evento.html">Evento</a>
+                <a href="gallery.html">Galería</a>
+                <a href="musicstore.html" id="musicStoreOutline">Music Store</a>
+            </nav>
+
+            
+            <header class="burgerMenuButton">
+                <i class="fa-solid fa-bars"></i>
+            </header>
+
+            <nav class="burgerMenu">
+                <a href="index.html#welcome">Inicio</a>
+                <a href="index.html#biography">Biografía</a>
+                <a href="contact.html">Contacto</a>
+                <a href="videos.html">Videos</a>
+                <a href="evento.html">Evento</a>
+                <a href="gallery.html">Galería</a>
+                <a href="musicstore.html">Music Store</a>
+            </nav>
+        </header>
+
+
+        <!-- Página - contenido -->
+        <section id="contact">
+            <article>
+                <table>
+                    <tr><th>Girona / España</th></tr>
+                    <tr><td id="dirección">C, Sant Cris 10 - Albons</td></tr>
+                    <tr><td>Bp: 17136</td></tr>
+                    <tr><td>627 695 179</td></tr>
+                </table>
+
+                <table>
+                    <tr><th>Booking</th></tr>
+                    <tr><td id="dirección">C, Major 63 - Riudellots de la Selva</td></tr>
+                    <tr><td>Bp: 17457</td></tr>
+                    <tr><td>662 371 126</td></tr>
+                </table>
+
+                <table>
+                    <tr><th>DME - Dakar / Senegal</th></tr>
+                    <tr><td id="dirección">www.dionemagsentertainment.site</td></tr>
+                    <tr><td>Producción - Gestión</td></tr>
+                    <tr><td>+(221) 774 511 634</td></tr>
+                </table>
+            </article>
+
+            <section class="box_email">
+                <form class="emailForm" onsubmit="sendMail(event)" method="POST">
+                    <label for="from"></label>
+                    <input type="email" class="from" name="from" required placeholder="Your e-mail"><br><br>
+                    
+                    <label for="subject"></label>
+                    <input type="text" class="subject" name="subject" required placeholder="Subject"><br><br>
+                    
+                    <label for="emailbody"></label><br>
+                    <textarea class="emailbody" name="emailbody" rows="4" cols="50" required placeholder="Message..."></textarea><br><br>
+                    
+                    <button type="submit" class="button_send">Send</button>
+                </form>
+            </section>
+        </section>
+        <hr>
+        
+
+        <footer class="footer-principal">
+            <iframe 
+                src="footer-frame.html" 
+                frameborder="0"
+                scrolling="no"></iframe>
+        </footer>
+  
+    </section>
+    <script src="scripts.js"></script>
+    <script src="burger.js"></script>
+    <script>
+        // --------------- FUNCIÓN DE ENVÍO EMAIL ---------------
+        function sendMail(event) {
+        event.preventDefault();
+        
+        let parms = {
+            from_email: document.querySelector(".from").value,
+            user_email: document.querySelector(".from").value,
+            subject: document.querySelector(".subject").value,
+            message: document.querySelector(".emailbody").value
+        }
+
+        emailjs.send("service_lla2o68", "template_07egzyh", parms)
+            .then(function(response) {
+                alert("E-mail Sent!");
+                document.querySelector(".from").value = "";
+                document.querySelector(".subject").value = "";
+                document.querySelector(".emailbody").value = "";
+            }, function(error) {
+                console.error("Error sending email:", error);
+        });
+        }
+    </script>
+</body>
+</html>
